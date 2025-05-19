@@ -1,5 +1,8 @@
 # # 🔁 Recursion:Sum of Digits using Recursion in Python
-
+NAME : G SANJAY
+---
+REG NO : 212224230243
+---
 ## 🎯 AIM:
 To write a Python program to calculate the **sum of all digits** in a number using **recursion**.
 
@@ -15,9 +18,18 @@ To write a Python program to calculate the **sum of all digits** in a number usi
 6. **Stop**
 
 ## 💻 PROGRAM:
-
-ADD CODE HERE
+  def sum_digits(num):
+      if num < 0 or int(num) != num:
+          return 0
+      elif num == 0:
+          return 0
+      else:
+          return (num % 10) + sum_digits(num//10)
+  num= int(input())
+  print(sum_digits(num))
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/02d60b88-a02f-4083-aa2d-3e1787ae10ca)
 
 ## RESULT
+Thus, the program has been executed successfully.
